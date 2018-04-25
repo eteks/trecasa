@@ -2,6 +2,10 @@ body, html
 {
     height: 100%;
 }
+.log_header
+{
+    padding: 3% 5% 0% 2%;
+}
 .bgimage
 {
     background: url("../img/bg_image.png") no-repeat center ;
@@ -18,12 +22,13 @@ body, html
 }
 .nav_bar_right, .top-right
 {
-    float: right;
-    
+    float: right;    
 }
 .nav_bar_right a
 {
-    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 5px;
 }
 .nav_bar_right li
 {
@@ -31,6 +36,16 @@ body, html
     float: left;
     margin-left: 5px;
     margin-top: 11px;
+}
+.nav_bar_right li a
+{
+    font-size: 18px;
+    border-right: 1px solid #fff;
+    padding: 0px 5px 0px 3px;
+}
+.nav_bar_right li:last-child > a
+{
+    border: none;
 }
 /*FORM*/
 .form_slider 
@@ -40,19 +55,49 @@ body, html
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2%;
-    width: 490px;
+    max-width: 490px;
 }
 .login_button
 {
   background-color: #2b2a29;
-  height: 30px;
-  font-size: 18px;
   color: #fff;
   border: 0;
-  display: block;
-  /*margin-bottom: 10px;*/
 }
-
+.login_button:hover
+{
+    color: #fff;
+}
+.center_block {
+  float:none;
+  margin: 7% 0 5% 0;
+}
+.log_link
+{
+    display: block;
+    margin: 5% 5px;
+}
+.form_slider a
+{
+    color: #2b2a29;
+}
+/*Register*/
+.half_content
+{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 15px;
+}
+.content_container
+{
+    max-width: 1225px;
+    /*padding: 8%;*/
+}
+.tiny_input input
+{
+    max-width: 50px;
+    display: inline-block;
+}
 /****************************
     actividades
 
@@ -190,4 +235,8 @@ body, html
      font-size:10px;
      padding-right: 15px;
   }
+  .form_slider
+   {
+    top: 70%;
+   }
 }
