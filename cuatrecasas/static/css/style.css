@@ -222,35 +222,59 @@ form p
 {
   float: left;
 }
+.footer_left li
+{
+  list-style-type: none;
+  margin-top:15px;
+}
+.footer_left li a
+{
+  color:#fff;
+  text-decoration: none;
+}
 .footer_right
 {
   float: right;
   list-style-type: none;
-  padding-top: 40px;
+  padding-top: 55px;
 }
 .footer_right li
 {
   float: left;
   padding: 0 15px;
 }
+  .footer_copyright
+   {
+    display: none;
+    color:#fff !important;
+    font-size:9px !important;
+    margin-top: 15px;
+   }  
+ .footer_copyright_outer li
+ {
+  list-style-type: none;
+ }
+  .footer_copyright_outer
+  {
+    padding: 0 15px;
+    display: none;
+  }
  .dropdown-menu
    {
     left: unset !important;
     right: 1% !important;
+    top: 34px;
    }
   .dropdown-menu li
   {
     float: none !important;
+    padding: 5px 0 !important;
+    margin-top: 0 !important;
   }
   .dropdown-menu .border_bottom
   {
      border-bottom: 1px solid #000;
   }
-  /* .dropdown-menu li a
-   {
-    display: block;
-    width: 100%
-   }*/
 /****************************
   Media queries
 
@@ -291,6 +315,13 @@ form p
     float: none;
     margin: 15px 0;
    }
-  
+   .footer_left li a
+   {
+    display: none;
+   }
+   .footer_copyright, .footer_copyright_outer
+   {
+    display: block;
+   }  
     
 }
