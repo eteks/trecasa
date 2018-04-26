@@ -1,6 +1,6 @@
 body, html 
 {
-
+    height: 100%;
 }
 .log_header
 {
@@ -16,7 +16,7 @@ body, html
     /*width:100%;
     text-align:center;
     /*height: 100vh;*/
-    /*background-position: center;*/
+    background-position: center;
     background-size: cover;
     height: 100%;
 }
@@ -53,10 +53,16 @@ body, html
     border: none;
 }
 /*FORM*/
-form p 
+form p
 {
-    padding-left: 15px;
+    padding-left: 16px;
     color: white;
+}
+form label
+{
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
 }
 .form_subhead
 {
@@ -103,6 +109,13 @@ form p
     vertical-align: top;
     padding: 0px 15px;
 }
+.half_content_nopad
+{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 15px 0px 0px;
+}
 .content_container
 {
     max-width: 1225px;
@@ -124,21 +137,40 @@ form p
    display: inline-block;
 
 }
+.reg_button
+{
+  background-color: #2b2a29;
+  color: #fff;
+  border: 0;
+  font-size: 22px;
+  border-radius: 5px;
+}
+.reg_button:hover
+{
+    color: #fff;
+}
+.reg_pad
+{
+    padding: 4% 0;
+}
 /*CUstomized check box*/
 .containers {
     display: inline-block;
     position: relative;
-    padding-right: 65px;
+    padding-right: 60px;
+    padding-left: 25px;
     margin-bottom: 30px;
     margin-top: 15px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    max-width: 125px;
+    max-width: 140px;
     text-align: right;
+    color: #fff;
+    font-weight: normal;
 }
 /* Hide the browser's default checkbox */
 .containers input {
@@ -152,8 +184,8 @@ form p
     position: absolute;
     top: -10px;
     right: 0;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: #fff;
     border-radius: 5px;
 }
@@ -182,8 +214,8 @@ form p
 
 /* Style the checkmark/indicator */
 .containers .checkmark:after {
-    left: 19px;
-    top: 5px;
+    left: 12px;
+    top: 0px;
     width: 15px;
     height: 30px;
     border: solid #000;
@@ -193,6 +225,81 @@ form p
     transform: rotate(45deg);
 }
 /*Check box ends*/
+/*Checkbox smal*/
+ /* Customize the label (the container) */
+.contain {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 11px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.contain input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmarked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+.contain:hover input ~ .checkmarked {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.contain input:checked ~ .checkmarked {
+  background-color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarked:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.contain input:checked ~ .checkmarked:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.contain .checkmarked:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.small_check 
+{
+    text-align: right;
+    max-width: 330px;
+    float: right;
+}
+/*Checkbox small ends*/
 /****************************
     actividades
 
