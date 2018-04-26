@@ -431,7 +431,16 @@ form p
     {
        border-bottom-left-radius: 0;
     }
-    .dropdown-menu 
+    
+    .menu_bar .inner li,.menu_bar .inner
+    {
+      float: none;
+    }
+
+  }
+@media (max-width: 350px) 
+{
+  .dropdown-menu 
     {
       top: 180px;
       min-width: 320px;
@@ -444,9 +453,4 @@ form p
     {
      position: static;
     }
-    .menu_bar .inner li,.menu_bar .inner
-    {
-      float: none;
-    }
-
-  }
+}
