@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
       <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
     </head>
     <body>
@@ -25,10 +27,21 @@
                 </div>
                 <div class="top-right">
                     <ul class="inner">
-                        <li class="active"><a href="#">ES</a></li>
-                        <li><a href="#">EN</a></li>
-                        <li class="no_border"><a href="#">PT</a></li>
-                        <li><a href="#"><img src="../static/img/setting_icon.png"></a></li>
+                        <li class="active right_border"><a href="#">ES</a></li>
+                        <li class="right_border"><a href="#">EN</a></li>
+                        <li class="last_li"><a href="#">PT</a></li>
+                        <li>
+                            <ul class="dropdown show">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../static/img/setting_icon.png">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li class="border_bottom"><a class="dropdown-item" href="">Configuracion</a></li>
+                                    <li class="border_bottom"><a class="dropdown-item" href="">Enviar surgerencias | Ayuda</a></li>
+                                    <li><a class="dropdown-item" href="">salir</a></li>
+                                </ul>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="clear_both"></div>
@@ -54,12 +67,12 @@
             <div class="content-holder">
                     <img class="footer_left" src="../static/img/banner_logo.png">
                     <ul class="footer_right">
-                        <li><a class="social_icon" href ="#"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a></li>
-                        <li><a class="social_icon" href ="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>      
-                        <li><a class="social_icon" href ="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                        <li><a class="social_icon" href ="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                        <li><a class="social_icon" href ="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
-                        <li><a class="social_icon" href ="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a></li>
+                        <li><a class="social_icon" href ="#"><i class="fa fa-pinterest fa-1x" aria-hidden="true"></i></a></li>
+                        <li><a class="social_icon" href ="#"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a></li>      
+                        <li><a class="social_icon" href ="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a></li>
+                        <li><a class="social_icon" href ="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a></li>
+                        <li><a class="social_icon" href ="#"><i class="fa fa-youtube fa-1x" aria-hidden="true"></i></a></li>
+                        <li><a class="social_icon" href ="#"><i class="fa fa-google-plus fa-1x" aria-hidden="true"></i></a></li>
                     </ul>
                     <div class="clear_both"></div>
             </div>
