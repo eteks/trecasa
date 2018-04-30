@@ -13,3 +13,7 @@ class Gymbcn_pageview(TemplateView):
 	template_name = "gymbcn.html"
 class Galeria_pageview(TemplateView):
 	template_name = "galeria.html"
+class Gympass_pageview(TemplateView):
+	template_name = "gympass.html"
+class Salud_pageview(TemplateView):
+	template_name = "salud.html"

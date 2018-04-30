@@ -312,23 +312,25 @@ form label
 {
     width: 68%;
     float: right;
+    padding: 0px 0px 15px 0px;
 }
-.three_fourth h2
+.three_fourth h2, .half_55 h2
 {
     font-size: 30px;
+    color: #f74552;
 }
-.three_fourth p
+.three_fourth p, .half_55 p
 {
-    font-size: 14px;
+    font-size: 18px;
 }
-.three_fourth a
+.three_fourth a, .half_55 a
 {
     color: #f74552;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
 }
-.three_fourth a:hover
+.three_fourth a:hover, .half_55 a:hover
 {
     color: #f74552;
 }
@@ -600,6 +602,87 @@ div.desc {
   {
     float: right;
   }
+  .half_55
+  {
+    width: 54%;
+    float: left;    
+    padding: 0px 0px 15px 0px;
+}
+  }
+  .half_45
+  {
+    width: 44%;
+    float: right;
+  }
+  /****************************
+  SALUD
+
+****************************/
+.search_pane
+{
+    background-color: #d9dada;
+}
+.search_pane .search-container {
+  /*float: right;*/
+}
+
+.search_pane input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    min-width: 80%;
+    margin-left: 15px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+}
+
+.search_pane .search-container button {
+  /*float: right;*/
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #fff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+}
+
+.search_pane .search-container button:hover {
+  background: #fcfcfc;
+}
+.left_content
+{
+    padding: 0px 15px;
+}
+.left_list li
+{
+    list-style: none;    
+}
+.left_list li a
+{
+    text-decoration: none;
+    color: #2d2c2b;
+    font-size: 18px;
+}
+.left_list li a:hover
+{
+    color: #2d2c2b;
+}
+.list_title
+{
+    margin-left:5px; 
+}
+.left_list ul 
+{
+    padding: 5px;
+}
+.left_list ul span
+{
+    font-size: 10px;
+}
 /****************************
   GALERIA 
 
