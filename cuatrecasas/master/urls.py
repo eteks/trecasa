@@ -7,4 +7,6 @@ urlpatterns = [
     url(r'^actividades/$', views.Actividades_pageview.as_view(), name='actividades'),
     url(r'^register/$', views.Register_pageview.as_view(), name='register'),
     url(r'^gymbcn/$', views.Gymbcn_pageview.as_view(), name='gymbcn'),
+    url(r'^gympass/$', views.Gympass_pageview.as_view(), name='gympass'),
+    url(r'^salud/$', views.Salud_pageview.as_view(), name='salud'),
    ]
