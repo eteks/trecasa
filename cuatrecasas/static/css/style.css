@@ -660,6 +660,7 @@ div.desc {
 .left_content
 {
     padding: 0px 15px;
+    overflow-y: scroll;
 }
 .left_list li
 {
@@ -677,7 +678,8 @@ div.desc {
 }
 .list_title
 {
-    margin-left:5px; 
+    margin-left:5px;
+    color: #f74552;
 }
 .left_list ul 
 {
@@ -686,6 +688,33 @@ div.desc {
 .left_list ul span
 {
     font-size: 10px;
+}
+.width_65
+{
+    width: 65%;
+    float: left;
+}
+.width_65 span
+{
+    font-size: 10px;
+}
+.width_65 h2
+{
+    margin-bottom: 0px;
+}
+.width_65 p
+{
+    margin: 10px 0px;
+}
+.width_33
+{
+    width: 33%;
+    float: right;
+    margin-top: 65px;
+}
+.width_33 img
+{
+    padding: 10px;
 }
 /****************************
   GALERIA 
@@ -819,6 +848,12 @@ div.desc {
     .menu_bar .inner li,.menu_bar .inner
     {
       float: none;
+    }
+    .one_fourth, .three_fourth, .half_55, .half_45, .width_65, .width_33
+    {
+        float: none;
+        width: 100%;
+        padding: 0px 10px;
     }
     .actividades_right,.actividades_left
     {
