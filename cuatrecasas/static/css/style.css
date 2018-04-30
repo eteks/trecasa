@@ -531,7 +531,53 @@ form label
 ****************************/
 .actividades_left
 {
- 
+ padding:10px 10px;
+ width: 32% !important;
+}
+/*.map
+{
+  width: 100%
+}*/
+div.gallery {
+    float: left;
+    width: 294px;
+    background-color: #fefefe;
+    padding-left: 15px;
+
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: left;
+}
+.gallery h3
+{
+  font-size: 16px;
+  margin:0;
+  padding:0;
+}
+.gallery p
+{
+  font-size: 14px;
+  margin: 0;
+  padding: 2px 0;
+}
+.days
+{
+  margin-top: 30px !important;
+  background-color: #f74552;
+  padding: 10px !important;
+  color: #fff;
+  font-size: 16px;
+}
+.days span img
+{
+   width: 25px;
+   float: right;
 }
   /*GYMBCN Page*/
   .documentos
@@ -554,6 +600,78 @@ form label
   {
     float: right;
   }
+/****************************
+  GALERIA 
+
+****************************/
+.galeria
+{
+  overflow-y:scroll;
+}
+.galeria .gallery
+{
+  width: 427px ;
+  margin-top: 15px;
+  padding-right: 15px;
+  padding-left:0;
+}
+.galeria .gallery .desc
+{
+  background-color: #d9dada;
+}
+.first_layer
+{
+  background-color: #d9dada;
+  padding:15px;
+}
+/*.first_layer input
+{
+  width: 60px;
+  border:1px solid #fff;
+  border-radius: 4px;
+}
+.red
+{
+  color:red;
+}
+.first_layer span
+{
+  background-color:  #bbbbbb;
+  padding: 3px 2px;
+}
+.first_layer .right
+{
+  float: right;
+}
+.first_layer label
+{
+  padding: 0 15px;
+}*/
+.select-style {
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #bbbbbb url("../img/sort-down.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
+}
 /****************************
   Media queries
 
@@ -616,6 +734,15 @@ form label
     .menu_bar .inner li,.menu_bar .inner
     {
       float: none;
+    }
+    .actividades_right,.actividades_left
+    {
+      width: 100% !important;
+      float: none;
+    }
+    .galeria .gallery
+    {
+      width: 100%;
     }
 
   }
