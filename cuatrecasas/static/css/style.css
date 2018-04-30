@@ -507,6 +507,10 @@ form label
     border:0;
     margin-right:0;
   }
+  .navbar
+  {
+    margin-bottom: 0;
+  }
   .menu
   {
     margin-top: 15px;
@@ -707,49 +711,47 @@ div.desc {
   background-color: #d9dada;
   padding:15px;
 }
-/*.first_layer input
-{
-  width: 60px;
-  border:1px solid #fff;
-  border-radius: 4px;
-}
 .red
 {
   color:red;
-}
-.first_layer span
-{
-  background-color:  #bbbbbb;
-  padding: 3px 2px;
 }
 .first_layer .right
 {
   float: right;
 }
+.right .btn
+{
+  font-size: 24px;
+  padding: 0 10px;
+}
+
 .first_layer label
 {
-  padding: 0 15px;
-}*/
+  color:#fff;
+  font-size: 16px;
+}
 .select-style {
-    padding: 0;
-    margin: 0;
-    border: 1px solid #ccc;
-    width: 120px;
-    border-radius: 3px;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px solid #fff;
+    width: 100px;
+    border-radius: 4px;
     overflow: hidden;
-    background: #bbbbbb url("../img/sort-down.png") no-repeat 90% 50%;
+    /*background: #fff url("../img/down-arrow.png") no-repeat 100% 100%;*/
+    color:#afb0b0;
+    font-size: 16px;
 }
 
 .select-style select {
     padding: 5px 8px;
-    width: 130%;
+    width: 100%;
     border: none;
     box-shadow: none;
     background-color: transparent;
     background-image: none;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .select-style select:focus {
@@ -825,6 +827,29 @@ div.desc {
     }
     .galeria .gallery
     {
+      width: 100%;
+    }
+    .first_layer .right
+    {
+      float: none;
+    }
+    .select-style
+    {
+      width: 100%;
+    }
+    .first_layer label
+    {
+      padding: 10px;
+    }
+    .right .btn 
+    {
+      float: right;
+      margin: 10px 0;
+    }
+    .gallery
+    {
+      padding-right: 15px !important;
+      padding-left: 15px !important;
       width: 100%;
     }
 
