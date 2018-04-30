@@ -9,3 +9,5 @@ class Actividades_pageview(TemplateView):
     template_name = "actividades.html"
 class Register_pageview(TemplateView):
 	template_name = "register.html"
+class Gymbcn_pageview(TemplateView):
+	template_name = "gymbcn.html"

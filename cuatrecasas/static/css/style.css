@@ -1,6 +1,6 @@
 body, html 
 {
-    height: 100%;
+    
 }
 .log_header
 {
@@ -153,6 +153,9 @@ form label
 {
     padding: 4% 0;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-align: center; /* Firefox */
+}
 /*CUstomized check box*/
 .containers {
     display: inline-block;
@@ -300,6 +303,35 @@ form label
     float: right;
 }
 /*Checkbox small ends*/
+.one_fourth
+{
+    width: 29%;
+    float: left;
+}
+.three_fourth
+{
+    width: 68%;
+    float: right;
+}
+.three_fourth h2
+{
+    font-size: 30px;
+}
+.three_fourth p
+{
+    font-size: 14px;
+}
+.three_fourth a
+{
+    color: #f74552;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.three_fourth a:hover
+{
+    color: #f74552;
+}
 /****************************
     actividades
 
@@ -478,6 +510,27 @@ form label
     margin-top: 15px;
     font-size: 16px;
     display: none;
+  }
+  /*GYMBCN Page*/
+  .documentos
+  {
+    background-color: #f74552;
+    padding: 12px;
+    margin: 10px 0px;
+  }
+  .documentos a
+  {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .documentos a:focus, a:hover
+  {
+    color:#fff;
+  }
+  .documentos span img
+  {
+    float: right;
   }
 /****************************
   Media queries
