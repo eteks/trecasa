@@ -335,7 +335,7 @@ form label
     color: #f74552;
 }
 /****************************
-    actividades
+   layout
 
 ****************************/
 .top-left
@@ -527,6 +527,14 @@ form label
   {
     background-color: #b2b3b3;
   }
+  /****************************
+    actividades
+
+****************************/
+.actividades_left
+{
+ 
+}
   /*GYMBCN Page*/
   .documentos
   {
