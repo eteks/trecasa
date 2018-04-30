@@ -329,23 +329,23 @@ form p
     padding: 0 15px;
     display: none;
   }
- .dropdown-menu
+ .settings_icon .dropdown-menu
    {
     left: unset !important;
     right: 1% !important;
     top: 34px;
    }
-  .dropdown-menu li
+  .settings_icon .dropdown-menu li
   {
     float: none !important;
     padding: 10px 0 !important;
     margin-top: 0 !important;
   }
-  .dropdown-menu span
+  .settings_icon .dropdown-menu span
   {
     padding: 0 15px;
   }
-  .dropdown-menu .border_bottom
+  .settings_icon .dropdown-menu .border_bottom
   {
      border-bottom: 1px solid #000;
   }
@@ -371,6 +371,20 @@ form p
     margin-top: 15px;
     font-size: 16px;
     display: none;
+  }
+  .wellnessjob ul li
+  {
+    float: none !important;
+    text-align: center;
+  }
+  .wellnessjob ul li a
+  {
+    font-size: 18px;
+    color: #fff;
+  }
+  .wellnessjob ul 
+  {
+    background-color: #b2b3b3;
   }
 /****************************
   Media queries
@@ -440,7 +454,7 @@ form p
   }
 @media (max-width: 350px) 
 {
-  .dropdown-menu 
+  .settings_icon .dropdown-menu 
     {
       top: 180px;
       min-width: 320px;
@@ -449,7 +463,7 @@ form p
 /*      
       position: static;*/
     }
-    .dropdown
+    .settings_icon .dropdown
     {
      position: static;
     }
