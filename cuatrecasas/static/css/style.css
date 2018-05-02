@@ -14,8 +14,8 @@ body, html
 {
     background: url("../img/bg_image.png") no-repeat;
     /*width:100%;
-    text-align:center;
-    /*height: 100vh;*/
+    text-align:center;*/
+    height: 100vh;
     background-position: center;
     background-size: cover;
     height: 100%;
