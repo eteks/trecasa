@@ -19,20 +19,32 @@
                     <div class="clear_both"></div>
             </div>
         </div>
+        <!-- Active Class -->
         <script type="text/javascript">
-         $(document).ready(function () {
+          $(document).ready(function() {
+          // get current URL path and assign 'active' class
+          var pathname = window.location.pathname;
+          $('#navbar_inner > li > a[href="'+pathname+'"]').parent().addClass('active');
+          // var pathname = window.location.pathname;
+          // $('#top_right_active > li > a[href="'+pathname+'"]').parent().addClass('active');
+        })
+          
+        </script>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () 
+            {
+                // I18N Calendar
+                $('.language-calendar').each(function () {
+                    var $this = $(this);
+                    var lang = $this.data('lang');
+                    $this.pignoseCalendar({
+                        lang: lang
+                    });
+                });
 
-             $("#top_right_active").on('click', 'li', function () {
-                $("#top_right_active li.active").removeClass("active");
-                // adding classname 'active' to current click li 
-                $(this).addClass("active");
-                });
-             $("#navbar_inner").on('click', 'li', function () {
-                $("#navbar_inner li.active").removeClass("active");
-                // adding classname 'active' to current click li 
-                $(this).addClass("active");
-                });
-            
-       
-          });
-      </script>
+                // This use for DEMO page tab component.
+                $('.menu .item').tab();
+            });
+            //]]>
+        </script>
