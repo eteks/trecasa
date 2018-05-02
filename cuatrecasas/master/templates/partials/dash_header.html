@@ -33,16 +33,17 @@
                 <div class="menu_bar navbar navbar-default">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_inner">
+                            <!-- <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
+                            <span class="icon-bar"></span>    -->   
+                            <img src="../static/img/menu_bar_icon.png">                  
                         </button>
                         <p class="menu">Menu</p>
                     </div>
                     <div class="collapse navbar-collapse" id="navbar_inner">
                         <ul class="inner" id="navbar_inner">
                             <li class=""><a href="{% url 'actividades' %}"><strong>ACTIVIDADES</strong></a></li>
-                            <li class="dropdown show wellnessjob"><a class="dropdown-toggle" href=""role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>WELLNESSJOB</strong></a>
+                            <li class="dropdown show wellnessjob"><a class="dropdown-toggle" href=""role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>WELLNESSJOB</strong><span class="add"><img src="../static/img/add.png"</span></a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                     <li><a href="{% url 'gymbcn' %}"><strong>GYM BCN</strong></a></li>
                                     <li><a href="{% url 'gympass' %}"><strong>GYM PASS</strong></a></li>

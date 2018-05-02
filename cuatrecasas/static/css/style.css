@@ -518,8 +518,9 @@ display: none;
   .menu
   {
     margin-top: 15px;
-    font-size: 16px;
+    font-size: 18px;
     display: none;
+    color: #fff;
   }
  .wellnessjob ul li
   {
@@ -538,6 +539,11 @@ display: none;
   .wellnessjob ul 
   {
     background-color: #b2b3b3;
+  }
+  .add
+  {
+    float: right;
+    display: none;
   }
   /****************************
     actividades
@@ -903,6 +909,14 @@ div.desc {
     .width_33 img
     {
       padding:0;
+    }
+    .navbar-header
+    {
+      background-color: #b2b3b3;
+    }
+    .add
+    {
+      display: block;
     }
 
   }
