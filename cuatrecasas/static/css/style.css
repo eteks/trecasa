@@ -527,6 +527,10 @@ form label
     font-size: 18px;
     color: #fff;
   }
+  .wellnessjob ul li a:hover
+  {
+    background: none !important;
+  }
   .wellnessjob ul 
   {
     background-color: #b2b3b3;
@@ -742,7 +746,7 @@ div.desc {
 }
 .red
 {
-  color:red;
+  color:red !important;
 }
 .first_layer .right
 {
