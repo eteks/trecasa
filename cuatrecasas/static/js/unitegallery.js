@@ -982,7 +982,8 @@ function UGFunctions(){
 		//set html image:
 		var htmlImage = "<img";
 		
-		if(obj.imageWidth !== null){
+		if(obj.imageWidth !== null)
+		{
 			htmlImage += " width = '" + obj.imageWidth + "'";
 			obj.style += "width:" + obj.imageWidth + ";";
 		}
@@ -11085,7 +11086,8 @@ function UGTileDesign(){
 	/**
 	 * get text panel element from the tile
 	 */
-	function getTextPanelElement(objTile){
+	function getTextPanelElement(objTile)
+	{
 		var objTextPanel = objTile.children(".ug-textpanel");
 		
 		return(objTextPanel);
@@ -13249,7 +13251,8 @@ function UGSlider(){
 				
 				g_objThis.trigger(t.events.AFTER_PUT_IMAGE, objSlide);
 			}
-			else{		//if the image not loaded, load the image and show it after.
+			else
+			{		//if the image not loaded, load the image and show it after.
 				objImage.fadeTo(0,0);
 				showPreloader(objPreloader);
 				objSlide.data("isLoading", true);
@@ -22114,7 +22117,8 @@ function UGLightbox(){
 		html += "<div class='ug-lightbox-overlay'></div>";
 		
 		//set top panel only on wide mode
-		if(g_temp.isCompact == false && g_temp.isTopPanelEnabled){
+		if(g_temp.isCompact == false && g_temp.isTopPanelEnabled)
+		{
 			html += "<div class='ug-lightbox-top-panel'>";
 			html += 	"<div class='ug-lightbox-top-panel-overlay'></div>";
 			
@@ -22122,7 +22126,9 @@ function UGLightbox(){
 				html += 	"<div class='ug-lightbox-numbers'></div>";
 			
 			html += "</div>";	//top panel
-		}else{
+		}
+		else
+		{
 			
 			//put numbers without top panel
 			if(g_options.lightbox_show_numbers)

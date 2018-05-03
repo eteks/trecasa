@@ -1,40 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <title>Cuatrecasas</title>
-
-        <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="../static/css/style.css">
-        <!-- Scrollbar Custom CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-        
-    </head>
-    <body>
+{% extends 'base.html' %}
+{% load static %}
+  {% block title %} Registration {% endblock %}
+    {% load i18n %}
+      {% block register_content %}
         <div class="bgimage">
             <!-- <img src="../static/img/bg_image.png"> -->
             <div class="content-holder">
-                <div class="log_header">
-                    <img src="../static/img/main_logo.png">
-                    <div class="nav_bar_right">
-                        <ul >
-                            <li><a href="#">ES</a></li>
-                            <li><a href="#">EN</a></li>
-                            <li class=""><a href="#">PT</a></li>
-                        </ul>
-                        <a class="nav_bar_right">Registrase</a>
-                    </div>                    
-                </div>           
+                    
                 <div class="">
-                     <form class="content_container" action="">
-                       <h3 class="text-center">Registro</h3>
+                     <form class="content_container" action="{% url 'index' %}">
+                       <h3 class="text-center">{%trans "Registro" %}</h3>
                        <div>
-                       <p class="form_subhead">Datos personales y de contacto</p>
+                       <p class="form_subhead">{%trans "Datos personales y de contacto" %}</p>
                        <div>
                        <div class="">
                             <div class="half_content">
@@ -66,16 +43,16 @@
                                 </div>                    
                             </div> <!-- half_content ends -->
                                 <div>
-                                    <p class="form_subhead">Datos deportivos</p>
+                                    <p class="form_subhead">{%trans "Datos deportivos" %}</p>
                                 </div>
                                 <div>
                                     <div class="half_content_nopad">
                                         <div class="form-group tiny_input half_content">
-                                            <label for="">Tall Maillot:</label>
+                                            <label for="">{%trans "Tall Maillot:" %}</label>
                                             <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Xs">
                                         </div>
                                         <div class="form-group tiny_input half_content">
-                                            <label for="">Tall camiseta:</label>
+                                            <label for="">{%trans "Tall camiseta:" %}</label>
                                             <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Xs">
                                         </div>
                                     </div>
@@ -97,48 +74,48 @@
                                     </div>                    
                             </div> <!-- half_content ends -->
                             <div>
-                                <p class="">Me interesa:</p>
+                                <p class="">{%trans "Me interesa:" %}</p>
                             </div>
                             <div class="form-group full_input half_content">
-                                <label for="">Correr:</label>
-                                <label class="containers">Asfalto
+                                <label for="">{%trans "Correr:" %}</label>
+                                <label class="containers">{%trans "Asfalto" %}
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="containers">Montana
+                                <label class="containers">{%trans "Montana" %}
                                   <input type="checkbox">
                                   <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="form-group full_input half_content">
-                                <label for="">Bicicleta:</label>
-                                <label class="containers">Carretera
+                                <label for="">{%trans "Bicicleta:" %}</label>
+                                <label class="containers">{%trans "Carretera" %}
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="containers">BTT
+                                <label class="containers">{%trans "BTT" %}
                                   <input type="checkbox">
                                   <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="form-group full_input half_content">
-                                <label for="">Nadar:</label>
-                                <label class="containers">Piscina
+                                <label for="">{%trans "Nadar:" %}</label>
+                                <label class="containers">{%trans "Piscina" %}
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="containers">Marnaton
+                                <label class="containers">{%trans "Marnaton" %}
                                   <input type="checkbox">
                                   <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="form-group full_input half_content">
-                                <label for="">Cabinar:</label>
-                                <label class="containers">Urbano
+                                <label for="">{%trans "Cabinar:" %}</label>
+                                <label class="containers">{%trans "Urbano" %}
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
-                                <label class="containers">Montana
+                                <label class="containers">{%trans "Montana" %}
                                   <input type="checkbox">
                                   <span class="checkmark"></span>
                                 </label>
@@ -146,13 +123,13 @@
                             
                             <div>
                                 <div class="form-group full_input">
-                                    <label for="">Otros:</label>
+                                    <label for="">{%trans "Otros:" %}</label>
                                     <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="">
                                 </div>                                       
                                 
                             </div>
                             <div>
-                                    <p class="form_subhead">Datos deportivos</p>
+                                    <p class="form_subhead">{%trans "Datos deportivos" %}</p>
                                 </div>
                             <div class="half_content">
                                 <div class="form-group">
@@ -167,14 +144,14 @@
                                   <input type="email"  class="form-control" id="formGroupExampleInput" placeholder="repite e-mail">
                                 </div>
                                 <div class="small_check">
-                                <label class="contain">Accepto las condiciones de uso politica de privacidad
+                                <label class="contain">{%trans "Accepto las condiciones de uso politica de privacidad" %}
                                   <input type="checkbox" checked="checked">
                                   <span class="checkmarked"></span>
                                 </label> 
                                 </div>                   
                             </div> <!-- half_content ends -->
                             <div class="reg_pad text-center">
-                                <button type="submit" class="reg_button"><strong>REGISTRARME</strong></button>
+                                <button type="submit" class="reg_button"><strong>{%trans "REGISTRARME" %}</strong></button>
                             </div>
                             
 
@@ -189,12 +166,4 @@
             </div> <!-- content holder ends -->
            
         </div>
-        
-        <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <!-- Bootstrap Js CDN -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- jQuery Custom Scroller CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script> 
-    </body>
-</html>
+    {% endblock %} 

@@ -1,86 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <title>Cuatrecasas</title>
-
-        <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="../static/css/style.css">
-        <!-- Scrollbar Custom CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-
-      <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="../static/css/pignose.calendar.min.css"/>
-      <script type="text/javascript" src="../static/js/pignose.calendar.full.min.js"></script>
-        
-    </head>
-    <body>
+{% extends 'base.html' %}
+{% load static %}
+  {% block title %} ACTIVIDADES {% endblock %}
+    {% load i18n %}
+      {% block dashboard_content %}
         <div class="content-holder">
-            <div class="header">
-                <div class="top-left">
-                    <p><strong>Hola,Alberta</strong> </p>
-                </div>
-                <div class="top-right">
-                    <ul class="inner" id="top_right_active">
-                        <li class=" active right_border"><a href="#">ES</a></li>
-                        <li class="right_border"><a href="#">EN</a></li>
-                        <li class="last_li"><a href="#">PT</a></li>
-                        <li class="settings_icon">
-                            <ul class="dropdown show">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="../static/img/setting_icon.png">
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li class="border_bottom"><a class="dropdown-item" href=""><span><img src="../static/img/settings-gears.png"></span>Configuracion</a></li>
-                                    <li class="border_bottom"><a class="dropdown-item" href=""><span><img src="../static/img/info_icon.png"></span>Enviar surgerencias | Ayuda</a></li>
-                                    <li><a class="dropdown-item" href=""><span><img src="../static/img/logout.png"></span>salir</a></li>
-                                </ul>
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="clear_both"></div>
-                <div class="banner_img">
-                    <img src="../static/img/banner.png">
-                    <div class="banner_logo">
-                        <img src="../static/img/banner_logo.png">
-                    </div>
-                </div>
-                <div class="menu_bar navbar navbar-default">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar_inner">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </button>
-                        <p class="menu">Menu</p>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar_inner">
-                        <ul class="inner" id="navbar_inner">
-                            <li class="active"><a href="#"><strong>ACTIVIDADES</strong></a></li>
-                            <li class="dropdown show wellnessjob"><a class="dropdown-toggle" href="#"role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>WELLNESSJOB</strong></a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <li><a href="#"><strong>GYM BCN</strong></a></li>
-                                    <li><a href="#"><strong>GYM PASS</strong></a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#"><strong>SALUD Y BIENESTAR</strong></a></li>
-                            <li><a href="#"><strong>GALERIA</strong></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="clear_both"></div>
-
-            </div> <!-- header -->
+           
             <div class="one_fourth actividades_left">
                 <div class="language-calendar language-es-calendar" data-lang="es"></div>
                 <div class="map">
@@ -94,10 +18,10 @@
                     <img src="../static/img/post_one.png" alt="post_one">
                     </a>
                     <div class="desc">
-                         <h3>MARATHAN BRACELONA<br>2018<h3>
-                         <p>Domingo 15 de abril 2018</p>
-                         <p>Fonts de Monjuic - Barcelona</p>
-                         <p class="days">Quedan: 20 dias <span><img src="../static/img/edit_icon.png"></span></p>
+                         <h3>{%trans "MARATHAN BRACELONA" %}<br>2018<h3>
+                         <p>{%trans "Domingo 15 de abril 2018" %}</p>
+                         <p>{%trans "Fonts de Monjuic - Barcelona" %}</p>
+                         <p class="days">{%trans "Quedan: 20 dias" %} <span><img src="../static/img/edit_icon.png"></span></p>
                       </div>
                 </div>
                  <div class="gallery">
@@ -105,9 +29,9 @@
                     <img src="../static/img/post_two.png" alt="post_one">
                     </a>
                     <div class="desc">
-                         <h3>SPINNING DAY<br>12 HORAS<h3>
-                         <p>Domingo 15 de abril 2018</p>
-                         <p>Fonts de Monjuic - Barcelona</p>
+                         <h3>{%trans "SPINNING DAY" %}<br>{%trans "12 HORAS" %}<h3>
+                         <p>{%trans "Domingo 15 de abril 2018" %}</p>
+                         <p>{%trans "Fonts de Monjuic - Barcelona" %}</p>
                          <p class="days">Quedan: 20 dias <span><img src="../static/img/edit_icon.png"></span></p>
                       </div>
                 </div>
@@ -116,10 +40,10 @@
                     <img src="../static/img/post_three.png" alt="post_one">
                     </a>
                     <div class="desc">
-                         <h3>MAKER CHALLENCE<br>&nbsp;<h3>
-                         <p>Domingo 15 de abril 2018</p>
-                         <p>Fonts de Monjuic - Barcelona</p>
-                         <p class="days">Quedan: 20 dias <span><img src="../static/img/edit_icon.png"></span></p>
+                         <h3>{%trans "MAKER CHALLENCE" %}<br>&nbsp;<h3>
+                         <p>{%trans "Domingo 15 de abril 2018" %}</p>
+                         <p>{%trans "Fonts de Monjuic - Barcelona" %}</p>
+                         <p class="days">{%trans "Quedan: 20 dias" %} <span><img src="../static/img/edit_icon.png"></span></p>
                       </div>
                 </div>
                  <div class="gallery">
@@ -127,10 +51,10 @@
                     <img src="../static/img/post_four.png" alt="post_one">
                     </a>
                     <div class="desc">
-                         <h3>CURSA SOLIDARIA<br>&nbsp;<h3>
-                         <p>Domingo 15 de abril 2018</p>
-                         <p>Fonts de Monjuic - Barcelona</p>
-                         <p class="days">Quedan: 20 dias <span><img src="../static/img/edit_icon.png"></span></p>
+                         <h3>{%trans "CURSA SOLIDARIA" %}<br>&nbsp;<h3>
+                         <p>{%trans "Domingo 15 de abril 2018" %}</p>
+                         <p>{%trans "Fonts de Monjuic - Barcelona" %}</p>
+                         <p class="days">{%trans "Quedan: 20 dias" %} <span><img src="../static/img/edit_icon.png"></span></p>
                       </div>
                 </div>
                  <div class="gallery">
@@ -138,10 +62,10 @@
                     <img src="../static/img/post_five.png" alt="post_one">
                     </a>
                     <div class="desc">
-                         <h3>V CARRERA MADRID EN<br>MARCHA CONTRA EL CANCER<h3>
-                         <p>Domingo 15 de abril 2018</p>
-                         <p>Fonts de Monjuic - Barcelona</p>
-                         <p class="days">Quedan: 20 dias <span><img src="../static/img/edit_icon.png"></span></p>
+                         <h3>{%trans "V CARRERA MADRID EN" %}<br>{%trans "MARCHA CONTRA EL CANCER" %}<h3>
+                         <p>{%trans "Domingo 15 de abril 2018" %}</p>
+                         <p>{%trans "Fonts de Monjuic - Barcelona" %}</p>
+                         <p class="days">{%trans "Quedan: 20 dias" %} <span><img src="../static/img/edit_icon.png"></span></p>
                       </div>
                 </div>
                  <div class="gallery">
@@ -149,70 +73,16 @@
                     <img src="../static/img/post_six.png" alt="post_one">
                     </a>
                     <div class="desc">
-                         <h3>JORNADA POTENCIA<br>TUS PEDALADAS<h3>
-                         <p>Domingo 15 de abril 2018</p>
-                         <p>Fonts de Monjuic - Barcelona</p>
-                         <p class="days">Quedan: 20 dias <span><img src="../static/img/edit_icon.png"></span></p>
+                         <h3>{%trans "JORNADA POTENCIA" %}<br>{%trans "TUS PEDALADAS" %}<h3>
+                         <p>{%trans "Domingo 15 de abril 2018" %}</p>
+                         <p>{%trans "Fonts de Monjuic - Barcelona" %}</p>
+                         <p class="days">{%trans "Quedan: 20 dias" %} <span><img src="../static/img/edit_icon.png"></span></p>
                       </div>
                 </div>
             </div>
             <div class="clear_both"></div>
         </div> <!-- content-holder -->
-        <div class="footer">
-            <div class="content-holder">
-                <ul class="footer_left">
-                    <li><img class="footer_left_img" src="../static/img/footer_logo.png"></li>
-                    <li><a href="#" class="footer_copyright_web">Copyright Cuatrecasas Sports Club | Todos los derechos reservados</a></li>
-                </ul>
-                <ul class="footer_right">
-                    <li><a class="social_icon" href ="#"><i class="fa fa-pinterest fa-1x" aria-hidden="true"></i></a></li>
-                    <li><a class="social_icon" href ="#"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a></li>      
-                    <li><a class="social_icon" href ="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a></li>
-                    <li><a class="social_icon" href ="#"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a></li>
-                    <li><a class="social_icon" href ="#"><i class="fa fa-youtube fa-1x" aria-hidden="true"></i></a></li>
-                    <li><a class="social_icon" href ="#"><i class="fa fa-google-plus fa-1x" aria-hidden="true"></i></a></li>
-                </ul>
-                    <div class="clear_both"></div>
-                     <ul class="footer_copyright_outer">
-                        <li><a href="#" class="footer_copyright">Copyright Cuatrecasas Sports Club | Todos los derechos reservados</a></li>
-                     </ul>
-                    <div class="clear_both"></div>
-            </div>
-        </div>
-        <script type="text/javascript">
-         $(document).ready(function () {
+      
+        {% endblock %}
 
-             $("#top_right_active").on('click', 'li', function () {
-                $("#top_right_active li.active").removeClass("active");
-                // adding classname 'active' to current click li 
-                $(this).addClass("active");
-                });
-             $("#navbar_inner").on('click', 'li', function () {
-                $("#navbar_inner li.active").removeClass("active");
-                // adding classname 'active' to current click li 
-                $(this).addClass("active");
-                });
-          });
-      </script>
-      <script type="text/javascript">
-            //<![CDATA[
-            $(function () 
-            {
-                // I18N Calendar
-                $('.language-calendar').each(function () {
-                    var $this = $(this);
-                    var lang = $this.data('lang');
-                    $this.pignoseCalendar({
-                        lang: lang
-                    });
-                });
-
-                // This use for DEMO page tab component.
-                $('.menu .item').tab();
-            });
-            //]]>
-        </script>
-
-        
-    </body>
- </html>
+      
