@@ -498,6 +498,7 @@ form label
   float: right;
   list-style-type: none;
   padding-top: 55px;
+  font-size: 30px;
 }
 .footer_right li
 {
@@ -656,7 +657,7 @@ div.desc {
 {
   font-size: 14px;
   margin: 0;
-  padding: 2px 0;
+  padding: 0px 10px;
   font-family: cuatrecasastext_regular;
 }
 .desc p span
@@ -847,10 +848,13 @@ div.desc {
 }
 .galeria .gallery
 {
-  width: 427px ;
+  max-width: 427px;
   margin-top: 15px;
   padding-right: 15px;
-  padding-left:0;
+  padding-left: 0;
+  width: 33%;
+  float: none;
+  display: inline-block;
 }
 .galeria .gallery .desc
 {
